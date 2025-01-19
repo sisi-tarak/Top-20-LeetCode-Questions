@@ -1,7 +1,7 @@
 
 
 
-**1. Two Sum**
+## 1. Two Sum
 
 * **Problem:** Given an array of integers `nums` and an integer `target`, return *indices* of the two numbers such that they add up to `target`.
 
@@ -43,7 +43,7 @@ print(result)  # Output: [0, 1]
         * Otherwise, add the current `num` and its index to the `seen` dictionary.
     * If no pair is found, return an empty list.
 
-**2. Reverse Linked List**
+## 2. Reverse Linked List
 
 * **Problem:** Reverse a singly linked list.
 
@@ -89,7 +89,7 @@ reversed_head = reverse_list(head)
         * Move `curr` to the `next_node`.
     * After the loop, `prev` will point to the head of the reversed list.
 
-**3. Valid Parentheses**
+## 3. Valid Parentheses
 
 * **Problem:** Determine if a string containing only parentheses `()`, `{}`, `[]` is valid.
 
@@ -134,7 +134,7 @@ print(is_valid(s3))  # Output: False
     * After iterating, the stack should be empty if all parentheses are valid.
 
 
-**4. Merge Two Sorted Lists**
+## 4. Merge Two Sorted Lists
 
 * **Problem:** Merge two sorted linked lists into one sorted list.
 
@@ -192,7 +192,7 @@ merged_list = merge_two_lists(list1, list2)
     * If one list becomes empty, append the remaining nodes of the other list to the `tail`.
     * Return the head of the merged list (the next node of the dummy node).
 
-**5. Longest Substring Without Repeating Characters**
+## 5. Longest Substring Without Repeating Characters
 
 * **Problem:** Find the length of the longest substring without repeating characters.
 
@@ -237,7 +237,7 @@ print(result)  # Output: 3 (Longest substring is "abc")
 
 
 
-**6. Climbing Stairs**
+## 6. Climbing Stairs
 
 * **Problem:** You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
@@ -277,7 +277,7 @@ print(result)  # Output: 8
         * The number of ways to reach step `i` is the sum of ways to reach step `i-1` and step `i-2`.
     * Return the number of ways to reach step `n` (stored in `dp[n]`).
 
-**7. Binary Search**
+## 7. Binary Search
 
 * **Problem:** Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write an efficient algorithm that searches for `target` in `nums`. If `target` is found, return its index. Otherwise, return `-1`.
 
@@ -327,7 +327,7 @@ print(result)  # Output: 4
 
 
 
-**8. Implement Queue using Stacks**
+## 8. Implement Queue using Stacks
 
 * **Problem:** Implement a first-in, first-out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a standard queue (`push`, `pop`, `peek`, `empty`).
 
@@ -396,7 +396,7 @@ print(queue.empty())  # Output: False
         * Return the top element of `stack2`.
     * `empty()`: Return `True` if both `stack1` and `stack2` are empty.
 
-**9. Valid Palindrome**
+## 9. Valid Palindrome
 
 * **Problem:** Determine whether a given string is a palindrome.
 
@@ -452,7 +452,7 @@ print(is_palindrome(s2))  # Output: False
     * If the loop completes without finding any mismatches, return `True`.
 
 
-**10. Merge Sorted Array**
+## 10. Merge Sorted Array
 
 * **Problem:** Given two sorted integer arrays `nums1` and `nums2`, merge `nums2` into `nums1` in such a way that it becomes a single, sorted array.
 
@@ -501,7 +501,7 @@ print(nums1)  # Output: [1, 2, 2, 3, 5, 6]
     * Decrement the appropriate pointers (`p1` or `p2`) and the main pointer `p`.
     * Continue until `p2` reaches 0.
 
-**11. Remove Duplicates from Sorted Array**
+## 11. Remove Duplicates from Sorted Array
 
 * **Problem:** Given an integer array `nums` sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
 
@@ -541,7 +541,7 @@ print(nums[:length])  # Output: [0, 1, 2, 3, 4]
         * If `nums[slow]` is different from `nums[fast]`, increment `slow` and place `nums[fast]` at `nums[slow]`.
     * Return `slow + 1` as the length of the array after removing duplicates.
 
-**12. String to Integer (atoi)**
+## 12. String to Integer (a to i)
 
 * **Problem:** Implement the `myAtoi(string s)` function, which converts a string to an integer.
 
@@ -601,7 +601,7 @@ print(my_atoi(s))  # Output: 0
         * Check for integer overflow/underflow.
     * Return the `result` multiplied by the `sign`.
 
-**13. Longest Common Prefix**
+## 13. Longest Common Prefix
 
 * **Problem:** Write a function to find the longest common prefix string amongst an array of strings.
 
@@ -642,7 +642,7 @@ print(longest_common_prefix(strs))  # Output: "fl"
         * If the `prefix` becomes empty, return an empty string.
     * Return the final `prefix`.
 
-**14. Roman to Integer**
+## 14. Roman to Integer
 
 * **Problem:** Roman numerals are represented by seven different symbols: `I`, `V`, `X`, `L`, `C`, `D`, and `M`. Given a roman numeral, convert it to an integer.
 
@@ -692,7 +692,7 @@ print(roman_to_integer(s))  # Output: 1994
         * If the current value is less than the previous value, subtract the current value from the `result`.
         * Otherwise, add the current value to the `result
 
-**15. Container With Most Water**
+## 15. Container With Most Water
 
 * **Problem:** Given an integer array `height` of length `n`, where `height[i]` is the height of the `i`-th line on the x-axis, find two lines that together with the x-axis form a container, such that the container contains the most water.
 
@@ -736,7 +736,7 @@ print(max_area(height))  # Output: 49
     * Move the pointer with the shorter height inward (to potentially increase the area).
     * Repeat until `left` and `right` pointers meet.
 
-**16. 3Sum**
+## 16. 3Sum
 
 * **Problem:** Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
 
@@ -796,7 +796,7 @@ print(three_sum(nums))  # Output: [[-1, -1, 2], [-1, 0, 1]]
             * If the sum is greater than 0, move the `right` pointer to the left.
     * Return the list of triplets.
 
-**17. Letter Combinations of a Phone Number**
+## 17. Letter Combinations of a Phone Number
 
 * **Problem:** Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
 
@@ -850,7 +850,7 @@ print(letter_combinations(digits))  # Output: ["ad", "ae", "af", "bd", "be", "bf
         * The `backtrack` function recursively explores each digit and adds its corresponding letters to the `current_string`.
         * When the `index` reaches the end of the `digits` string, add the `current_string` to the `combinations` list.
 
-**18. Combination Sum**
+## 18. Combination Sum
 
 * **Problem:** Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of `candidates` where the numbers in each combination add up to `target`. You may return the combinations in any order.
 
@@ -902,7 +902,7 @@ print(combination_sum(candidates, target))  # Output: [[2, 2, 3], [7]]
             * Explore the next `candidate` without including the current one.
 
 
-**19. Permutations**
+## 19. Permutations
 
 * **Problem:** Given an array `nums` of distinct integers, return all the possible permutations. You can return the answer in any order.
 
@@ -947,7 +947,7 @@ print(permute(nums))  # Output: [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3,
             * If the `num` is not already in the `current_permutation`, add it to the `current_permutation` and recursively explore further.
             * Backtrack by removing the `num` from the `current_permutation`.
 
-**20. Subsets**
+## 20. Subsets
 
 * **Problem:** Given an integer array `nums`, return all possible subsets (the power set). The solution must not contain duplicate subsets.
 
@@ -985,16 +985,7 @@ print(subsets(nums))  # Output: [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 
 
 
 
-**Explanation:**
-- Binary search works by dividing the search space into halves.
-- Initialize `left` to 0 and `right` to the last index of the array.
-- Compute the middle index `mid` and compare `nums[mid]` with `target`:
-  - If `nums[mid] == target`, return `mid` as the index of the target.
-  - If `nums[mid] < target`, move `left` to `mid + 1` to search in the right half.
-  - If `nums[mid] > target`, move `right` to `mid - 1` to search in the left half.
-- If the `target` is not found, return `-1`.
-
----
+<br/><br/>
 
 ## Usage
 
